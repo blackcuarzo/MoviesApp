@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow_brand"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".uilayer.uielements.access.LoginFragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/multiplier_52dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/imdb_logo_description"
+        android:src="@drawable/ic_imdb_logo_2016" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_26dp"
+        android:layout_marginEnd="@dimen/multiplier_26dp"
+        android:orientation="vertical"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/multiplier_5dp"
+            android:text="@string/user_field_label"
+            android:textSize="@dimen/multiplier_7sp"
+            android:textStyle="bold"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/RegistrationTextFields"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/multiplier_34dp"
+            android:layout_marginBottom="@dimen/multiplier_7dp"
+            app:boxStrokeWidth="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/multiplier_5dp"
+            android:text="@string/pass_field_label"
+            android:textSize="@dimen/multiplier_7sp"
+            android:textStyle="bold"
+
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/RegistrationTextFields"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/multiplier_34dp"
+            android:layout_marginBottom="@dimen/multiplier_7dp"
+            app:boxStrokeWidth="0dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/userPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/login_button"
+            style="@style/AccessButton"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginBottom="@dimen/multiplier_7dp"
+            android:text="@string/login_button" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="20sp"
+            android:layout_marginBottom="@dimen/multiplier_7dp"
+            android:text="@string/social_text"
+            android:textSize="@dimen/multiplier_7sp"
+            android:textStyle="italic" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/multiplier_7dp">
+
+        <Button
+            android:id="@+id/apple_button"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_apple_icon3"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded" />
+
+        <Button
+            android:id="@+id/facebook_button"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/multiplier_7dp"
+            android:layout_marginEnd="@dimen/multiplier_7dp"
+            app:icon="@drawable/ic_facebook_icon"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded" />
+
+        <Button
+            android:id="@+id/google_button"
+            style="@style/Widget.App.Button.OutlinedButton.IconOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon="@drawable/ic_google_icon"
+            app:shapeAppearance="@style/ShapeAppearanceOverlay.MyApp.Button.Rounded" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/registration_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/registration_text"
+        android:textSize="@dimen/multiplier_7sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/guest_link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_guest"
+        android:textSize="@dimen/multiplier_7sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

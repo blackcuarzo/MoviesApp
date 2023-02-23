@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".uilayer.uielements.menu.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/profilePhoto"
+            android:layout_width="@dimen/multiplier_20dp"
+            android:layout_height="@dimen/multiplier_20dp"
+            android:layout_marginStart="@dimen/multiplier_14dp"
+            android:layout_marginTop="@dimen/multiplier_9dp"
+            android:contentDescription="@string/profile_photo_description"
+            android:src="@drawable/profile_photo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/multiplier_15dp"
+            android:text="@string/user_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/multiplier_8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/profilePhoto"
+            app:layout_constraintStart_toEndOf="@id/profilePhoto"
+            app:layout_constraintTop_toTopOf="@+id/profilePhoto" />
+
+        <ImageView
+            android:layout_width="@dimen/multiplier_14dp"
+            android:layout_height="@dimen/multiplier_14dp"
+            android:layout_marginEnd="@dimen/multiplier_14dp"
+            android:contentDescription="@string/settings_symbol_description"
+            android:src="@drawable/ic_outline_settings_24"
+            app:layout_constraintBottom_toBottomOf="@+id/profilePhoto"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/profilePhoto" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/multiplier_8dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/profilePhoto">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/multiplier_14dp"
+            android:layout_marginEnd="@dimen/multiplier_14dp"
+            android:background="?android:attr/listDivider" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/multiplier_77dp"
+                android:layout_height="@dimen/multiplier_77dp"
+                android:layout_marginStart="@dimen/multiplier_14dp"
+                android:layout_marginTop="@dimen/multiplier_18dp"
+                android:layout_marginBottom="@dimen/multiplier_14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/multiplier_6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/multiplier_45dp"
+                        android:background="@color/grey_light"
+                        android:padding="@dimen/multiplier_5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card_internal_text"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/multiplier_5sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/multiplier_6dp"
+                        android:text="@string/card_ratings_text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/multiplier_5sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_numberof_ratings"
+                        android:textColor="@color/grey_default"
+                        android:textSize="@dimen/multiplier_5sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/multiplier_77dp"
+                android:layout_height="@dimen/multiplier_77dp"
+                android:layout_marginStart="@dimen/multiplier_14dp"
+                android:layout_marginTop="@dimen/multiplier_18dp"
+                android:layout_marginBottom="@dimen/multiplier_14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/multiplier_6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/multiplier_45dp"
+                        android:background="@color/grey_light"
+                        android:padding="@dimen/multiplier_5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card_internal_text"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/multiplier_5sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/multiplier_6dp"
+                        android:text="@string/card_ratings_text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/multiplier_5sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_numberof_ratings"
+                        android:textColor="@color/grey_default"
+                        android:textSize="@dimen/multiplier_5sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/multiplier_77dp"
+                android:layout_height="@dimen/multiplier_77dp"
+                android:layout_marginStart="@dimen/multiplier_14dp"
+                android:layout_marginTop="@dimen/multiplier_18dp"
+                android:layout_marginBottom="@dimen/multiplier_14dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/multiplier_6dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/multiplier_45dp"
+                        android:background="@color/grey_light"
+                        android:padding="@dimen/multiplier_5dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/card_internal_text"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/multiplier_5sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/multiplier_6dp"
+                        android:text="@string/card_ratings_text"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/multiplier_5sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/card_numberof_ratings"
+                        android:textColor="@color/grey_default"
+                        android:textSize="@dimen/multiplier_5sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_15dp"
+        android:layout_marginTop="@dimen/multiplier_14dp"
+        android:layout_marginEnd="@dimen/multiplier_24dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/multiplier_3dp"
+                android:layout_height="@dimen/multiplier_15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/yellow_vertical_ellypse" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/multiplier_8dp"
+                android:text="@string/follow_list_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/multiplier_12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/multiplier_14dp"
+            android:text="@string/follow_list_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/multiplier_8sp" />
+    </LinearLayout>
+
+    <Button
+        style="@style/followListButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_15dp"
+        android:layout_marginTop="@dimen/multiplier_15dp"
+        android:layout_marginEnd="@dimen/multiplier_15dp"
+        android:layout_marginBottom="@dimen/multiplier_15dp"
+        android:padding="15dp"
+        android:text="@string/follow_list_button" />
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_15dp"
+        android:layout_marginTop="@dimen/multiplier_14dp"
+        android:layout_marginEnd="@dimen/multiplier_24dp"
+        android:layout_marginBottom="@dimen/multiplier_15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/multiplier_3dp"
+                android:layout_height="@dimen/multiplier_15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/yellow_vertical_ellypse" />
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/multiplier_8dp"
+                android:text="@string/recent_views_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/multiplier_12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/multiplier_14dp"
+            android:text="@string/recent_views_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/multiplier_8sp" />
+    </LinearLayout>
+
+    <View style="@style/Divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_15dp"
+        android:layout_marginTop="@dimen/multiplier_14dp"
+        android:layout_marginEnd="@dimen/multiplier_24dp"
+        android:layout_marginBottom="@dimen/multiplier_15dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/multiplier_3dp"
+                android:layout_height="@dimen/multiplier_15dp"
+                android:layout_gravity="center"
+                android:background="@drawable/yellow_vertical_ellypse"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/multiplier_8dp"
+                android:text="@string/favourite_persons_title"
+                android:textColor="@color/black"
+                android:textSize="@dimen/multiplier_12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/multiplier_14dp"
+            android:text="@string/favorite_persons_details"
+            android:textColor="@color/black"
+            android:textSize="@dimen/multiplier_8sp" />
+    </LinearLayout>
+
+
+</LinearLayout>

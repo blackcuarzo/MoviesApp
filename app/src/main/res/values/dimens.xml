@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logo_size">173dp</dimen>
+    <dimen name="multiplier_7sp">14sp</dimen>
+    <dimen name="multiplier_9sp">18sp</dimen>
+    <dimen name="multiplier_26dp">52dp</dimen>
+    <dimen name="multiplier_17dp">34dp</dimen>
+    <dimen name="multiplier_35dp">70dp</dimen>
+    <dimen name="multiplier_7dp">14dp</dimen>
+    <dimen name="multiplier_9dp">18dp</dimen>
+    <dimen name="multiplier_20dp">40dp</dimen>
+    <dimen name="multiplier_34dp">68dp</dimen>
+    <dimen name="multiplier_5dp">10dp</dimen>
+    <dimen name="multiplier_52dp">104dp</dimen>
+    <dimen name="multiplier_6dp">12dp</dimen>
+    <dimen name="multiplier_8dp">16dp</dimen>
+    <dimen name="multiplier_45dp">90dp</dimen>
+    <dimen name="multiplier_65dp">130dp</dimen>
+    <dimen name="multiplier_15dp">30dp</dimen>
+    <dimen name="multiplier_12dp">24dp</dimen>
+    <dimen name="multiplier_8sp">16sp</dimen>
+    <dimen name="multiplier_24dp">48dp</dimen>
+    <dimen name="multiplier_2dp">4dp</dimen>
+    <dimen name="multiplier_14dp">28dp</dimen>
+    <dimen name="multiplier_77dp">154dp</dimen>
+    <dimen name="multiplier_5sp">10sp</dimen>
+    <dimen name="multiplier_18dp">36dp</dimen>
+    <dimen name="multiplier_12sp">24sp</dimen>
+    <dimen name="multiplier_17sp">34sp</dimen>
+    <dimen name="multiplier_3dp">6dp</dimen>
+    <dimen name="mutliplier_6sp">12sp</dimen>
+    <dimen name="multiplier_13dp">26dp</dimen>
+    <dimen name="multiplier_4dp">8dp</dimen>
+
+</resources>

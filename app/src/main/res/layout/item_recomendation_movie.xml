@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="125dp"
+    android:layout_height="280dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginBottom="42dp"
+    android:background="@color/white"
+    android:elevation="@dimen/multiplier_5dp">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <ImageView
+        android:layout_width="@dimen/multiplier_9dp"
+        android:layout_height="@dimen/multiplier_13dp"
+        android:layout_marginStart="@dimen/multiplier_3dp"
+        android:elevation="@dimen/multiplier_5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/add_bookmark"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/movieThumbnailImage" />
+
+    <ImageView
+        android:id="@+id/movieThumbnailImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="@string/movie_image_contentDescription"
+        android:scaleType="centerCrop"
+        android:src="@drawable/batman_thumbnail"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_70"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="@dimen/multiplier_8dp"
+        android:layout_height="@dimen/multiplier_8dp"
+        android:layout_marginEnd="@dimen/multiplier_4dp"
+        android:layout_marginBottom="@dimen/multiplier_6dp"
+        android:src="@drawable/ic_outline_info_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ratingsymbol"
+        android:layout_width="@dimen/multiplier_7dp"
+        android:layout_height="@dimen/multiplier_7dp"
+        android:layout_marginStart="@dimen/multiplier_6dp"
+        android:layout_marginTop="@dimen/multiplier_5dp"
+        android:contentDescription="@string/star_logo_description"
+        android:src="@drawable/ic_baseline_stars_filled_circle_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movieThumbnailImage"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_3dp"
+        android:text="4.5"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ratingsymbol"
+        app:layout_constraintStart_toEndOf="@id/ratingsymbol"
+        app:layout_constraintTop_toTopOf="@+id/ratingsymbol" />
+
+    <TextView
+        android:id="@+id/movieNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/multiplier_5dp"
+        android:text="@string/movie_name_default"
+        android:textColor="@color/black"
+        android:textSize="@dimen/mutliplier_6sp"
+        app:layout_constraintStart_toStartOf="@+id/ratingsymbol"
+        app:layout_constraintTop_toBottomOf="@+id/ratingsymbol" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

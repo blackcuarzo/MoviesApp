@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_access"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.danielcano.imdbapp.uilayer.uielements.access.LoginFragment"
+        android:label="@null"
+        tools:layout="@layout/fragment_login">
+        <action
+            android:id="@+id/action_loginFragment_to_registrationFragment"
+            app:destination="@id/registrationFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_menuActivity"
+            app:destination="@id/menuActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/registrationFragment"
+        android:name="com.danielcano.imdbapp.uilayer.uielements.access.RegistrationFragment"
+        android:label="@null"
+        tools:layout="@layout/fragment_registration">
+        <action
+            android:id="@+id/action_registrationFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_registrationFragment_to_menuActivity2"
+            app:destination="@id/menuActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/menuActivity"
+        android:name="com.danielcano.imdbapp.uilayer.uielements.menu.MenuActivity"
+        android:label="activity_menu"
+        tools:layout="@layout/activity_menu" >
+        <argument
+            android:name="user_name"
+            app:argType="string"
+            />
+    </activity>
+</navigation>

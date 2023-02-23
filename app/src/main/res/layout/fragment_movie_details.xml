@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".uilayer.uielements.menu.MovieDetailsFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="DefaultTitle" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_17dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="@dimen/multiplier_5dp"
+                android:layout_height="@dimen/multiplier_20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/yellow_vertical_ellypse" />
+
+            <TextView
+                android:id="@+id/name_es"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/multiplier_8dp"
+                android:text="@string/default_spanish_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/multiplier_17sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="0dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_original_english_name"
+            android:textColor="@color/grey_default"
+            android:textSize="@dimen/multiplier_8sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_original_title"
+            android:textColor="@color/grey_default"
+            android:textSize="@dimen/multiplier_8sp"
+            app:layout_constraintBottom_toBottomOf="@+id/name"
+            app:layout_constraintStart_toEndOf="@+id/name"
+            app:layout_constraintTop_toTopOf="@+id/name" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/previewImage"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:contentDescription="@string/movie_scene_description"
+        android:src="@drawable/batman_preview"
+        app:layout_constraintTop_toBottomOf="@id/info" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/multiplier_34dp"
+        android:layout_height="@dimen/multiplier_34dp"
+        android:contentDescription="@string/play_logo_description"
+        android:src="@drawable/ic_baseline_play_circle_outline_24"
+        app:layout_constraintBottom_toBottomOf="@+id/previewImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/previewImage"
+        app:layout_constraintTop_toTopOf="@+id/previewImage"
+        app:tint="@color/white" />
+
+    <ImageView
+        android:id="@+id/movieThumbnailImage"
+        android:layout_width="@dimen/multiplier_45dp"
+        android:layout_height="@dimen/multiplier_65dp"
+        android:layout_marginStart="@dimen/multiplier_15dp"
+        android:layout_marginTop="@dimen/multiplier_6dp"
+        android:contentDescription="@string/thumbnail_image_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/previewImage" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
+        android:layout_width="@dimen/multiplier_35dp"
+        android:layout_height="@dimen/multiplier_20dp"
+        android:layout_marginStart="@dimen/multiplier_6dp"
+        android:backgroundTint="@color/white"
+        android:text="@string/movie_category"
+        android:textAllCaps="false"
+        android:textColor="@color/grey_default"
+        android:textSize="12sp"
+        app:layout_constraintStart_toEndOf="@id/movieThumbnailImage"
+        app:layout_constraintTop_toTopOf="@id/movieThumbnailImage" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="@dimen/multiplier_12dp"
+        android:layout_height="@dimen/multiplier_12dp"
+        android:layout_marginStart="@dimen/multiplier_6dp"
+        android:contentDescription="@string/star_logo_description"
+        android:src="@drawable/ic_baseline_star_24"
+        app:layout_constraintBottom_toBottomOf="@+id/button"
+        app:layout_constraintStart_toEndOf="@+id/button"
+        app:layout_constraintTop_toTopOf="@+id/button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_2dp"
+        android:text="@string/default_rating"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+
+    <TextView
+        android:id="@+id/synopsis"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/multiplier_6dp"
+        android:layout_marginEnd="@dimen/multiplier_15dp"
+        android:ellipsize="end"
+        android:maxLines="4"
+        android:text="@string/default_synopsis_text"
+        android:textColor="@color/black"
+        android:textSize="@dimen/multiplier_8sp"
+
+        app:layout_constraintBottom_toBottomOf="@id/movieThumbnailImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/movieThumbnailImage"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/episodeGuideText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_15dp"
+        android:layout_marginTop="@dimen/multiplier_15dp"
+        android:text="@string/episode_guide_title"
+        android:textColor="@color/black"
+        android:textSize="@dimen/multiplier_8sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movieThumbnailImage" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/followListButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/multiplier_12dp"
+        android:paddingStart="@dimen/multiplier_7dp"
+        android:paddingEnd="@dimen/multiplier_7dp"
+        android:text="@string/follow_add_list_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/episodeGuideText" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/multiplier_12dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/button2">
+
+        <View style="@style/Divider" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

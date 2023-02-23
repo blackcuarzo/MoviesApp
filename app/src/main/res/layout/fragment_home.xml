@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".uilayer.uielements.menu.HomeFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="275dp"
+            android:theme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"
+            app:contentScrim="@color/yellow_brand"
+            app:expandedTitleTextAppearance="@style/ExpandedCustom"
+            app:layout_scrollFlags="scroll|enterAlways">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                app:layout_collapseMode="pin">
+
+                <ImageView
+                    android:id="@+id/previewImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:contentDescription="@string/movie_scene_description"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/strangerthings_preview"
+                    app:layout_constraintBottom_toBottomOf="@id/guideline_70"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="@dimen/multiplier_34dp"
+                    android:layout_height="@dimen/multiplier_34dp"
+                    android:contentDescription="@string/play_logo_description"
+                    android:src="@drawable/ic_baseline_play_circle_outline_24"
+                    app:layout_constraintBottom_toBottomOf="@+id/previewImage"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/previewImage"
+                    app:layout_constraintTop_toTopOf="@+id/previewImage"
+                    app:tint="@color/white" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="125dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="@dimen/multiplier_12dp"
+                    android:layout_marginBottom="@dimen/multiplier_12dp"
+                    android:contentDescription="@string/thumbnail_image_description"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/stranger_things_thumbnail"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/guideline_half" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/multiplier_8dp"
+                    android:layout_marginTop="@dimen/multiplier_6dp"
+                    android:text="@string/recommended_movie_series_title"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/previewImage" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/preview_content_details"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintStart_toStartOf="@+id/textView"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_70"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.7" />
+
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/guideline_half"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.33" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Dark" />
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View style="@style/Divider" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/multiplier_12dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/multiplier_3dp"
+                    android:layout_height="@dimen/multiplier_15dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/yellow_vertical_ellypse" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/multiplier_8dp"
+                    android:text="@string/recycler_view_title"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/multiplier_12sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recomendationList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/multiplier_12dp" />
+
+            <View style="@style/Divider" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/movie_scene_description"
+                android:src="@drawable/strangerthings_preview" />
+
+            <View style="@style/Divider" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/movie_scene_description"
+                android:src="@drawable/strangerthings_preview" />
+
+            <View style="@style/Divider" />
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

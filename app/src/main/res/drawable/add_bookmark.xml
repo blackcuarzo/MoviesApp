@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:inset="-3dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:drawable="@drawable/ic_sharp_bookmark_24" />
+        <item
+            android:width="12dp"
+            android:height="12dp"
+            android:drawable="@drawable/ic_twotone_add_24"
+            android:gravity="center" />
+    </layer-list>
+</inset>

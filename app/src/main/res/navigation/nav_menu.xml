@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_menu"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.danielcano.imdbapp.uilayer.uielements.menu.SearchFragment"
+        android:label="@null"
+        tools:layout="@layout/fragment_search">
+        <action
+            android:id="@+id/action_searchFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.danielcano.imdbapp.uilayer.uielements.menu.HomeFragment"
+        android:label="@null"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_movieDetailsFragment"
+            app:destination="@id/movieDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/playFragment"
+        android:name="com.danielcano.imdbapp.uilayer.uielements.menu.PlayFragment"
+        android:label="fragment_play"
+        tools:layout="@layout/fragment_play"/>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.danielcano.imdbapp.uilayer.uielements.menu.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile"/>
+    <fragment
+        android:id="@+id/movieDetailsFragment"
+        android:name="com.danielcano.imdbapp.uilayer.uielements.menu.MovieDetailsFragment"
+        tools:layout="@layout/fragment_movie_details">
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="name_es"
+            app:argType="string" />
+        <argument
+            android:name="synopsis"
+            app:argType="string" />
+        <argument
+            android:name="preview"
+            app:argType="string" />
+        <argument
+            android:name="thumbnail"
+            app:argType="string" />
+        <argument
+            android:name="shortDescription"
+            app:argType="string" />
+        <argument
+            android:name="numberEpisodes"
+            app:argType="integer" />
+    </fragment>
+</navigation>

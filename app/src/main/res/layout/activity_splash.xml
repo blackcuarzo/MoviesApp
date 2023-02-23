@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".uilayer.uielements.access.SplashActivity"
+    android:background="@color/yellow_brand"
+
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/logo_size"
+        android:layout_gravity="center"
+        android:contentDescription="@string/imdb_logo_description"
+        android:src="@drawable/ic_imdb_logo_2016" />
+
+
+</LinearLayout>

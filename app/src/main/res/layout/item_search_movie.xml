@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    >
+
+    <ImageView
+        android:id="@+id/movieThumbnailImage"
+        android:layout_width="@dimen/multiplier_45dp"
+        android:layout_height="@dimen/multiplier_65dp"
+        android:layout_marginStart="@dimen/multiplier_12dp"
+        android:contentDescription="@string/movie_image_contentDescription"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieNameText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_9dp"
+        android:textColor="@color/black"
+        android:text="@string/movie_name_default"
+        android:textStyle="bold"
+        android:textSize="@dimen/multiplier_9sp"
+        app:layout_constraintBottom_toTopOf="@+id/movieYearText"
+        app:layout_constraintStart_toEndOf="@+id/movieThumbnailImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieYearText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_9dp"
+        android:layout_marginBottom="@dimen/multiplier_9dp"
+        android:text="@string/movie_year_default"
+        android:textSize="@dimen/multiplier_9sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/movieThumbnailImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/movieActorsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/multiplier_9dp"
+        android:layout_marginTop="@dimen/multiplier_17dp"
+        android:text="@string/movie_actors_default"
+        android:textSize="@dimen/multiplier_7sp"
+        app:layout_constraintStart_toEndOf="@+id/movieThumbnailImage"
+        app:layout_constraintTop_toBottomOf="@+id/movieYearText" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
